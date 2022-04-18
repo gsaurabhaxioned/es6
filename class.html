@@ -1,0 +1,22 @@
+<script>
+    class hello{
+        //constructor method
+        constructor(name,age) {
+            console.log("this is constructor function");
+            this.name = name,
+            this.age = age
+        }
+                //object method
+        message(){
+            console.log(`Hello ${this.name} your age is ${this.age}`);
+        }
+        //static method,no need to create an object to call this function
+        static staticmethod() {
+            console.log("this is static method");
+        }
+    }
+
+    let a = new hello("someone",50);
+    a.message(); 
+    hello.staticmethod();
+</script>

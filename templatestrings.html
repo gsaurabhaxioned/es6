@@ -1,0 +1,14 @@
+<script>
+    let fname="john";
+    let lname="cena";
+    let display = `My "name" 
+                    is ${fname} 
+                 ${lname}`;
+    document.write(display);
+    console.log(display);
+    //template strings provides way to save multiline strings in variables and provides simple way for interpolation
+    function print(fname,lname) {
+        return `<br>My name is ${fname} ${lname}`;
+    }
+    document.write(print("john","cena"));
+</script>

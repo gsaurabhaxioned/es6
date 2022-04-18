@@ -1,0 +1,35 @@
+<script>
+    // let a = [10,20,30],
+        // b = a; //reference will be shared
+    //    b=[...a];//values will be copied instead of common reference
+    //    a[0]=40;
+    //    console.log(b[0]);
+
+       //we can add additinal values also
+
+    //    let c = [10,20,30],
+    //     d =[...c,40,50,60];
+    //     console.log(d);
+
+    //we can also merge two arrays in third array
+    // let a = [10,20,30],
+    // b = [40,50,60],
+    // c = [...a,...b,70,80];
+    // console.log(c);
+
+    // object destructring
+
+    let a = {
+        name : "john",
+        age : 45
+    }
+
+    let b = {
+        ...a,
+        city : "goa"
+    }
+    a.name="cena";
+    console.log(a);
+    console.log(b);
+
+</script>

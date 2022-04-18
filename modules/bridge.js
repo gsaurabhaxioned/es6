@@ -1,0 +1,1 @@
+export { show } from "./jsfile2.js";

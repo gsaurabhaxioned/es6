@@ -1,0 +1,56 @@
+<script>
+    // ***array destructuring***//
+
+    // let user =["abc",40];
+    //  name1 = user[0],
+    //  age1 = user[1]
+
+    // let [name,age,city="goa"] = user;
+    // console.log(name);
+    // console.log(age);
+    // console.log(city);
+
+    //***it will show undifined if got empty value at respective index***//
+
+    // let user1 = ["abc",,"goa"],
+    // [name,age,city] = user1;
+    // console.log(age);
+
+    //***destruring also work with nested array***//
+
+    // let user1 = ["abc","goa",["male",25]],
+    // [name,city,[gender,age]] = user1;
+    // console.log(gender);
+    // console.log(age);
+
+    //***array destructuring with rest operator***//
+    
+    // let user = ['a','b','c','d','e'],
+    // [firstLetter,...remainingLetters] = user;
+    // console.log(remainingLetters);
+
+    ///***array destructuring with function///
+
+    // function user([name,age,city="goa"]) {
+    //     console.log(name);
+    //     console.log(age);
+    //     console.log(city);
+    // }
+    // user(["john",42]);
+
+    // function user() {
+    //     return ["john",42];
+    // }
+    // let [name,age] = user();
+    // console.log(name);
+    // console.log(age);
+
+    ///***swapping by using destructuring***///
+
+    // let a = 1,
+    // b=2;
+    // [a,b] = [b,a];
+    // console.log(a);
+    // console.log(b);
+
+</script>

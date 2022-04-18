@@ -1,0 +1,16 @@
+<script>
+    /* rest parameter is the parameter that take all the arguments or rest of all the arguments 
+     in the form of array */
+
+     function res(a,...args) { //args must be always at the last
+         console.log(a);
+         console.log(args);
+         ///
+        //  length property 
+        console.log(args.length);
+        //on the basis of index
+        console.log(args[0]);
+     }
+
+     res(2,4,6,8,9,8)
+</script>

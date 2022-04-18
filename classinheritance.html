@@ -1,0 +1,25 @@
+<script>
+    class Parent {
+        constructor(name){
+            console.log(`Constructor : Parent ${name}`);
+            this.parentname = name;
+        }
+
+        info(){
+            console.log(`parent name is ${this.parentname}`);
+        }
+        
+    }
+
+    class child extends Parent {
+        
+        // constructor(name){
+            // super();   //must call super/parent constructor before initializing derrived constructor
+            // we can callback functions in parent constructor inside functions of child using super.fun-name();
+            // console.log(`Constructor : child ${name}`);
+        // }
+    }
+
+    let a = new child("child1");
+    a.info();
+</script>

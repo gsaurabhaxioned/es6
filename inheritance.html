@@ -1,0 +1,43 @@
+<script>
+    class employee {
+        constructor(name,age,sallary) {
+            this.empname = name;
+            this.empage = age;
+            this.empsallary = sallary;
+        }
+
+        info() {
+            document.write(`
+                <h5>Employee name:</h5><span>${this.empname}</span>
+                <h5>Employee age:</h5><span>${this.empage}</span>
+                <h5>Employee sallary:</h5><span>${this.empsallary}</span>
+            `);
+        }
+    }
+
+    class manager extends employee {
+        info(){
+            let ta = 1000;
+            let ca = 500;
+            let totalSallary = this.empsallary + ta + ca;
+            document.write(`
+                <h5>Employee name:</h5><span>${this.empname}</span>
+                <h5>Employee age:</h5><span>${this.empage}</span>
+                <h5>Employee sallary:</h5><span>${totalSallary}</span>
+            `);
+        }
+    }
+
+    //multilevel inheritance
+
+    class assist_manager extends manager {
+
+    }
+
+    let a = new employee("emp1",25,10000);
+    a.info();
+    let b = new manager("emp2",25,10000);
+    b.info();
+    let c = new manager("emp3",22,10000);
+    c.info();
+</script>

@@ -1,0 +1,18 @@
+<script>
+    function info(arg1,arg2,arg3,...arg) {
+        console.log(arg1);
+        console.log(arg2);
+        console.log(arg3);
+        console.log(...arg);
+    }
+
+    const person = {
+        name:"john smith",
+        company:"MyCompany",
+        course:"java",
+        city:"goa"
+    }
+
+    info`I am ${person.name} and my company name is ${person.company}.My course
+                is ${person.course}.My city is ${person.city}`
+</script>
