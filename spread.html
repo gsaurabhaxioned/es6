@@ -21,14 +21,18 @@
 
     let a = {
         name : "john",
-        age : 45
+        age : 45,
+        obj2:{
+            gender:"male"
+        }
     }
-
+// a.name="ff";
     let b = {
-        ...a,
         city : "goa"
     }
-    a.name="cena";
+
+    // a.name="cena";
+    a.obj2.gender="female";
     console.log(a);
     console.log(b);
 

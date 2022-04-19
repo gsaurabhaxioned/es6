@@ -1,14 +1,14 @@
 <script>
     // ***array destructuring***//
 
-    // let user =["abc",40];
-    //  name1 = user[0],
-    //  age1 = user[1]
+    let user =[40];
+     name1 = user[0],
+     age1 = user[1]
 
-    // let [name,age,city="goa"] = user;
-    // console.log(name);
-    // console.log(age);
-    // console.log(city);
+    let [name="something",age] = user;
+    console.log(name);
+    console.log(age);
+    console.log(city);
 
     //***it will show undifined if got empty value at respective index***//
 
@@ -16,7 +16,7 @@
     // [name,age,city] = user1;
     // console.log(age);
 
-    //***destruring also work with nested array***//
+    //***destructuring also work with nested array***//
 
     // let user1 = ["abc","goa",["male",25]],
     // [name,city,[gender,age]] = user1;

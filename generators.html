@@ -13,17 +13,21 @@
     <button class="next">Next step</button>
     <script>
         function* generateit(){
-            let a=10,
-                b=20;
-            console.log(`addition is ${a+b}`);
-            yield `step 1 completed`;
-            console.log(`subtraction is ${a-b}`);
-            yield `step 2 completed`
-            console.log(`multiplication is ${a*b}`);
-            yield `step 3 completed`
-            console.log(`division is ${a/b}`);
-            yield `step 4 completed`
-            return `all steps done`
+            for(let i=0;i<=100;i++){
+                console.log(i);
+                yield "step 1 completed"
+            }
+            // let a=10,
+            //     b=20;
+            // console.log(`addition is ${a+b}`);
+            // yield `step 1 completed`;
+            // console.log(`subtraction is ${a-b}`);
+            // yield `step 2 completed`
+            // console.log(`multiplication is ${a*b}`);
+            // yield `step 3 completed`
+            // console.log(`division is ${a/b}`);
+            // yield `step 4 completed`
+            // return `all steps done`
         }
         let g=generateit();
         

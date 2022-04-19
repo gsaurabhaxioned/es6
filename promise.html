@@ -1,0 +1,30 @@
+<script>
+    let promiseobj = new Promise((resolve,reject)=>{
+        let a = true,
+        num=10
+
+        if(a==true){
+            resolve(20)
+        }else{
+            reject("rejected")
+        }
+    }).then(
+        (value) => {console.log(value);
+        return value+10
+        }
+    ).then(
+        (value) => {console.log(value);
+        return value+10
+        }
+    ).then(
+        (value) => {console.log(value)
+        return value+10
+        }
+    ).then(
+        (value) => console.log(value)
+    ).catch(
+        (value) => console.log(value)
+    ).finally(
+       ()=> console.log("finally")
+    )
+</script>

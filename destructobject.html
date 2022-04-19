@@ -10,24 +10,24 @@
 
 ///***object destructuring with alias names***///
 // let obj = {
-//         name: "john",
+        
 //         age: 42
 //     };
-// let {name:n,age:a} = obj;
-// console.log(n);
-// console.log(a);
+// let {name,age} = obj;
+// console.log(name);
+// console.log(age);
 
 ///***nested object destructuring***///
-    // let obj = {
-    //     name: "john",
-    //     age: 42,
-    //     obj1: {
-    //         city:"goa"
-    //     }
-    // }
+    let obj = {
+        name: "john",
+        age: 42,
+        obj1: {
+            city:"goa"
+        }
+    }
 
-    // let {name:n,age:a,obj1:{city}} = obj;
-    // console.log(n);
-    // console.log(a);
-    // console.log(city);
+    let {name:n,age:a,obj1:{city}} = obj;
+    console.log(n);
+    console.log(a);
+    console.log(city);
 </script>

@@ -6,7 +6,7 @@
 import * as main from "./main.js";
 main.hello();
 
-//export/import default 
+//export/import defaulT
 
 import {default as d} from "./main.js";
 console.log(d);
