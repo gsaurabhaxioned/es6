@@ -1,5 +1,5 @@
 <script>
-    class hello{
+    class Hello{
         //constructor method
         constructor(name,age) {
             console.log("this is constructor function");
@@ -8,7 +8,8 @@
         }
                 //object method
         message(){
-            console.log(`Hello ${this.name} your age is ${this.age}`);
+            this.city = "goa";
+            console.log(`Hello ${this.name} your age is ${this.age} from ${this.city}`);
         }
         //static method,no need to create an object to call this function
         static staticmethod() {
@@ -16,7 +17,10 @@
         }
     }
 
-    let a = new hello("someone",50);
+    let a = new Hello("someone",50);
+    let b = new Hello("otherone",50);
+    // console.log(Object.getPrototypeOf(a) === Object.getPrototypeOf(b));
     a.message(); 
     hello.staticmethod();
+    console.log(a);
 </script>

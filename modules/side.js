@@ -8,7 +8,7 @@ main.hello();
 
 //export/import defaulT
 
-import {default as d} from "./main.js";
+import d from "./main.js";
 console.log(d);
 
 // multiple modules 
